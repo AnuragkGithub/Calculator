@@ -1,0 +1,119 @@
+:root {
+	--light: #EEE;
+	--red: #FF0000;
+	--green: #008000;
+	--yellow: #FFFF00;
+	--blue: #0000FF;
+	--dark: #1c1c1c1c;
+	--darker: #1F2937;
+	--white: #FFFFFF;
+	--green:  #00FF00;
+	--darkest: #111827;
+	--grey: #505050;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+    --orange_yellow:#ff9500;
+}
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-color: white; 
+}
+#container{
+	width: 1000px;
+	height: 550px;
+	background-color: white;
+	margin: 50px auto;	
+}
+#calculatorglow{
+	width: 320px;
+	height: 520px;
+	background-color:rgb(121, 25, 25);
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: white;
+    color: white;
+	content:'';
+	position:center;
+	left:-2px;
+	top:-2px;
+	background:linear-gradient(45deg,#e6fb04,#ff6600,
+	#00ff66,#00ff,#ff00ff,#ff0099,#ff3300,#099fff);
+	background-size:400%;
+animation:animate 20s linear infinite;
+}
+@keyframes animate{
+	0%{
+		background-position:0 0;
+	}
+	50%{
+		background-position:400% 0;
+	}
+	100%{
+		background-position:0 0;
+	}
+}
+
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 20px;
+	color: white;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+.number, .empty{
+	background-color: white;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 30px;
+	background-color: var(--orange_yellow);
+}
+button:nth-child(8){
+	font-size: 30px;
+	background-color: var(--orange_yellow);
+}
+button:nth-child(12){
+	font-size: 30px;
+	background-color: var(--orange_yellow);
+}
+button:nth-child(16){
+	font-size: 30px;
+	background-color: var(--orange_yellow);
+}
+button:nth-child(20){
+	font-size: 30px;
+	background-color: var(--orange_yellow);
+}
